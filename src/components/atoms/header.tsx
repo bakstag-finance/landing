@@ -5,18 +5,13 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import clsx from "clsx";
-import { useRouter } from "next/navigation";
 import { MVP } from "@/lib/links";
 import Link from "next/link";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  const navigation = useRouter();
-
   const handleChange = () => setIsOpen(!isOpen);
 
-  const navigateToMVP = () => navigation.push(MVP);
 
   return (
     <>
@@ -84,7 +79,7 @@ export const Header = () => {
           <div className="hidden lg:flex w-full h-full justify-between items-center relative z-10">
             <div className="flex items-center">
               <Image
-                  src="/assets/logo.png"
+                  src="/assets/logo.svg"
                   width={30}
                   height={30}
                   alt="logo image"
@@ -141,7 +136,7 @@ export const Header = () => {
           >
             <div className="flex items-center">
               <Image
-                  src="/assets/logo.png"
+                  src="/assets/logo.svg"
                   width={30}
                   height={30}
                   alt="logo image"

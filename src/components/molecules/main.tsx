@@ -19,7 +19,7 @@ export const MainSection = () => (
             autoPlay
             playsInline
             controls={false}
-            className="h-screen w-full object-contain overflow-scroll z-1"
+            className="h-screen w-full object-contain overflow-scroll z-1 transition-all transform scale-150"
             src="/assets/bg.mp4"
         />
       </div>
