@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeftRight, Menu } from "lucide-react";
+import { ArrowLeftRight } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -7,13 +7,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Header } from "@/components/atoms/header";
 
 export default function Home() {
   return (
@@ -343,7 +343,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-full  lg:h-screen  mt-5 lg:mt-0 w-full px-5 lg:px-44" id={"how-it-works"}>
+      <section
+        className="h-full  lg:h-screen  mt-5 lg:mt-0 w-full px-5 lg:px-44"
+        id={"how-it-works"}
+      >
         <div className={"w-full h-full flex flex-col"}>
           <span className={"text-4xl text-yellow-200 font-light"}>
             How it works
@@ -392,9 +395,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="h-full lg:h-screen w-full mt-5 lg:mt-0  px-5 lg:px-44 " id={"faq"}>
+      <section
+        className="h-full lg:h-screen w-full mt-5 lg:mt-0  px-5 lg:px-44 "
+        id={"faq"}
+      >
         <div
-          className={"h-[70%] w-full flex flex-col lg:flex-row justify-center items-center"}
+          className={
+            "h-[70%] w-full flex flex-col lg:flex-row justify-center items-center"
+          }
         >
           <div
             className={"flex flex-col justify-start items-start  h-full w-full"}
@@ -407,7 +415,9 @@ export default function Home() {
             </span>
           </div>
           <div
-            className={"flex flex-col justify-start items-start h-full w-full mt-5 lg:mt-0"}
+            className={
+              "flex flex-col justify-start items-start h-full w-full mt-5 lg:mt-0"
+            }
           >
             <div className={"bg-black-700 rounded-xl flex flex-col w-full p-4"}>
               <Accordion type="single" collapsible>
@@ -533,77 +543,6 @@ export default function Home() {
     </main>
   );
 }
-
-const Header = () => (
-  <>
-    <nav className="sticky top-0 w-full h-20 flex justify-center items-center z-50">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent backdrop-blur-md before:backdrop-blur-xl after:backdrop-blur-xs"></div>
-      <div className="hidden lg:flex w-full h-full justify-between items-center relative z-10 px-44">
-        <div className="flex items-center">
-          <Image
-            src="/assets/logo.png"
-            width={30}
-            height={30}
-            alt="logo image"
-          />
-          <span className="text-white-700 ml-3">Bakstag</span>
-        </div>
-        <div className="flex items-center">
-          <a
-            className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white"
-            href={"#about"}
-          >
-            <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              About
-            </span>
-          </a>
-          <a
-            className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white"
-            href={"#trust"}
-          >
-            <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Trust
-            </span>
-          </a>
-          <a
-            className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white"
-            href={"#how-it-works"}
-          >
-            <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              How It Works
-            </span>
-          </a>
-          <a
-            className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white"
-            href={"#faq"}
-          >
-            <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              FAQ
-            </span>
-          </a>
-          <Button className="rounded-xl ml-2">Exchange</Button>
-        </div>
-      </div>
-      <div
-        className={"flex lg:hidden flex-row justify-between z-10 w-full px-10"}
-      >
-        <div className="flex items-center">
-          <Image
-            src="/assets/logo.png"
-            width={30}
-            height={30}
-            alt="logo image"
-          />
-          <span className="text-white-700 ml-3">Bakstag</span>
-        </div>
-        <div className="flex items-center">
-          <Menu className={"stroke-gray-700"} />
-          <Button className="rounded-xl ml-5">Exchange</Button>
-        </div>
-      </div>
-    </nav>
-  </>
-);
 
 const Footer = () => (
   <div
