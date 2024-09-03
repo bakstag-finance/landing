@@ -73,6 +73,7 @@
 
 html {
   scroll-behavior: smooth;
+    background: #000000;
 }
 
 .gradient-blur {
@@ -91,94 +92,91 @@ html {
 .gradient-blur::before {
   content: "";
   z-index: 1;
+  -webkit-backdrop-filter: blur(0.5px);
   backdrop-filter: blur(0.5px);
   mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 12.5%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(0, 0, 0, 0) 37.5%
-  );
-}
-.gradient-blur > div:nth-of-type(6) {
-  z-index: 2;
-  backdrop-filter: blur(1px);
-  mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 12.5%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(0, 0, 0, 1) 37.5%,
-    rgba(0, 0, 0, 0) 50%
-  );
-}
-.gradient-blur > div:nth-of-type(5) {
-  z-index: 3;
-  backdrop-filter: blur(2px);
-  mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 25%,
-    rgba(0, 0, 0, 1) 37.5%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 0) 62.5%
-  );
-}
-.gradient-blur > div:nth-of-type(4) {
-  z-index: 4;
-  backdrop-filter: blur(4px);
-  mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 37.5%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 1) 62.5%,
-    rgba(0, 0, 0, 0) 75%
-  );
-}
-.gradient-blur > div:nth-of-type(3) {
-  z-index: 5;
-  backdrop-filter: blur(8px);
-  mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 1) 62.5%,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(0, 0, 0, 0) 87.5%
-  );
-}
-.gradient-blur > div:nth-of-type(2) {
-  z-index: 6;
-  backdrop-filter: blur(12px);
-  mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 62.5%,
-    rgba(0, 0, 0, 1) 75%,
-    rgba(0, 0, 0, 1) 87.5%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-.gradient-blur > div:nth-of-type(1) {
-  z-index: 7;
-  backdrop-filter: blur(14px);
-  mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 75%,
-    rgba(0, 0, 0, 1) 87.5%,
-    rgba(0, 0, 0, 1) 100%
+          to top,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 12.5%,
+          rgba(0, 0, 0, 1) 25%,
+          rgba(0, 0, 0, 0) 37.5%
   );
 }
 
-.gradient-blur > div:nth-of-type(1):after {
-  z-index: 7;
-  backdrop-filter: blur(24px);
+.gradient-blur > div:nth-of-type(6) {
+  z-index: 2;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   mask: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0) 75%,
-    rgba(0, 0, 0, 1) 87.5%,
-    rgba(0, 0, 0, 1) 100%
+          to top,
+          rgba(0, 0, 0, 0) 12.5%,
+          rgba(0, 0, 0, 1) 25%,
+          rgba(0, 0, 0, 1) 37.5%,
+          rgba(0, 0, 0, 0) 50%
   );
 }
-.gradient-blur::after {
-  content: "";
-  z-index: 8;
-  backdrop-filter: blur(64px);
-  mask: linear-gradient(to top, rgba(0, 0, 0, 0) 87.5%, rgba(0, 0, 0, 1) 100%);
+
+
+.gradient-blur > div:nth-of-type(5) {
+  z-index: 3;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  mask: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0) 25%,
+          rgba(0, 0, 0, 1) 37.5%,
+          rgba(0, 0, 0, 1) 50%,
+          rgba(0, 0, 0, 0) 62.5%
+  );
+}
+
+.gradient-blur > div:nth-of-type(4) {
+  z-index: 4;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  mask: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0) 37.5%,
+          rgba(0, 0, 0, 1) 50%,
+          rgba(0, 0, 0, 1) 62.5%,
+          rgba(0, 0, 0, 0) 75%
+  );
+}
+
+.gradient-blur > div:nth-of-type(3) {
+  z-index: 5;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  mask: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 1) 62.5%,
+          rgba(0, 0, 0, 1) 75%,
+          rgba(0, 0, 0, 0) 87.5%
+  );
+}
+
+.gradient-blur > div:nth-of-type(2) {
+  z-index: 6;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  mask: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0) 62.5%,
+          rgba(0, 0, 0, 1) 75%,
+          rgba(0, 0, 0, 1) 87.5%,
+          rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.gradient-blur > div:nth-of-type(1) {
+  z-index: 7;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  mask: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0) 75%,
+          rgba(0, 0, 0, 1) 87.5%,
+          rgba(0, 0, 0, 1) 100%
+  );
 }

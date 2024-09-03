@@ -80,78 +80,84 @@ export const Header = () => {
       </div>
 
       <nav className="sticky top-0 w-full h-20 flex justify-center items-center z-50">
-        <div className="hidden lg:flex w-full h-full justify-between items-center relative z-10 px-44">
-          <div className="flex items-center">
-            <Image
-              src="/assets/logo.png"
-              width={30}
-              height={30}
-              alt="logo image"
-              className={"rounded-full"}
-            />
-            <span className="text-white-700 ml-3">Bakstag</span>
-          </div>
-          <div className="flex items-center">
-            <a
-              className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
-              href={"#about"}
-            >
-              <span className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+        <div className={"w-full flex justify-center items-center max-w-[1200px]"}>
+          <div className="hidden lg:flex w-full h-full justify-between items-center relative z-10">
+            <div className="flex items-center">
+              <Image
+                  src="/assets/logo.png"
+                  width={30}
+                  height={30}
+                  alt="logo image"
+                  className={"rounded-full"}
+              />
+              <span className="text-white-700 ml-3">Bakstag</span>
+            </div>
+            <div className="flex items-center">
+              <a
+                  className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+                  href={"#about"}
+              >
+              <span
+                  className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 About
               </span>
-            </a>
-            <a
-              className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
-              href={"#trust"}
-            >
-              <span className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              </a>
+              <a
+                  className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+                  href={"#trust"}
+              >
+              <span
+                  className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 Trust
               </span>
-            </a>
-            <a
-              className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
-              href={"#how-it-works"}
-            >
-              <span className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              </a>
+              <a
+                  className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+                  href={"#how-it-works"}
+              >
+              <span
+                  className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 How It Works
               </span>
-            </a>
-            <a
-              className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
-              href={"#faq"}
-            >
-              <span className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              </a>
+              <a
+                  className="text-gray-700 mx-2 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+                  href={"#faq"}
+              >
+              <span
+                  className="bg-left-bottom bg-gradient-to-r from-white-700 to-white-700 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 FAQ
               </span>
-            </a>
-            <Link href={MVP} target={"_blank"}>
-              <Button className="rounded-xl ml-2">Exchange</Button>
-            </Link>
+              </a>
+              <Link href={MVP} target={"_blank"}>
+                <Button className="rounded-xl ml-2">Exchange</Button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div
-          className={
-            "flex lg:hidden flex-row justify-between z-10 w-full px-10"
-          }
-        >
-          <div className="flex items-center">
-            <Image
-              src="/assets/logo.png"
-              width={30}
-              height={30}
-              alt="logo image"
-              className={"rounded-full"}
-            />
-            <span className="text-white-700 ml-3">Bakstag</span>
-          </div>
-          <div className="flex items-center">
-            <Menu
-              className={"stroke-gray-700 cursor-pointer"}
-              onClick={handleChange}
-            />
-            <Link href={MVP} target={"_blank"}>
-              <Button className="rounded-xl ml-5">Exchange</Button>
-            </Link>
+          <div
+              className={
+                "flex lg:hidden flex-row justify-between z-10 w-full px-10 xl:px-0"
+              }
+          >
+            <div className="flex items-center">
+              <Image
+                  src="/assets/logo.png"
+                  width={30}
+                  height={30}
+                  alt="logo image"
+                  className={"rounded-full"}
+              />
+              <span className="text-white-700 ml-3">Bakstag</span>
+            </div>
+            <div className="flex items-center">
+              <Menu
+                  className={"stroke-gray-700 cursor-pointer"}
+                  onClick={handleChange}
+              />
+              <Link href={MVP} target={"_blank"}>
+                <Button className="rounded-xl ml-5">Exchange</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

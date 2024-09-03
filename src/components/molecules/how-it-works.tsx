@@ -1,9 +1,9 @@
 export const HowItWorksSection = () => (
   <section
-    className="h-full  lg:h-screen  mt-10 lg:mt-0 w-full px-5 lg:px-44"
+    className="h-full  lg:h-screen  mt-10 lg:mt-0 w-full flex justify-center items-center px-5 lg:px-44"
     id={"how-it-works"}
   >
-    <div className={"w-full h-full flex flex-col"}>
+    <div className={"w-full h-full flex flex-col max-w-[1200px]"}>
       <span className={"text-4xl text-yellow-200 font-light"}>
         How it works
       </span>

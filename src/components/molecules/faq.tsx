@@ -81,45 +81,51 @@ const SocialButton = ({ href, icon, label, className }: SocialButtonProps) => (
 
 export const FAQSection = () => (
   <section
-    className="h-full lg:h-screen w-full mt-10 lg:mt-0 px-5 lg:px-44"
+    className="h-full lg:h-screen w-full mt-10 lg:mt-0 px-5 lg:px-44 flex justify-center items-center"
     id="faq"
   >
-    <div className="h-[70%] w-full flex flex-col lg:flex-row justify-center items-center">
-      <div className="flex flex-col justify-start items-start h-full w-full">
-        <span className="text-4xl font-light text-purple-200">FAQ</span>
-        <span className="mt-5 text-4xl text-white-700 font-medium">
+    <div className={"w-full max-w-[1200px] h-full"}>
+      <div className="h-[70%] w-full flex flex-col lg:flex-row justify-center items-center">
+        <div className="flex flex-col justify-start items-start h-full w-full">
+          <span className="text-4xl font-light text-purple-200">FAQ</span>
+          <span className="mt-5 text-4xl text-white-700 font-medium">
           Expecting questions,
-          <br />
+          <br/>
           we answer
         </span>
-      </div>
-      <div className="flex flex-col justify-start items-start h-full w-full mt-5 lg:mt-0">
-        <div className="bg-black-700 rounded-xl flex flex-col w-full p-4">
-          <FAQAccordion />
         </div>
-        <div className="mt-2 ml-5 flex flex-row w-full items-center">
+        <div className="flex flex-col justify-start items-start h-full w-full mt-5 lg:mt-0">
+          <div className="bg-black-700 rounded-xl flex flex-col w-full p-4">
+            <FAQAccordion/>
+          </div>
+          <div className="mt-2 ml-5 flex flex-row w-full items-center">
           <span className="font-light text-4xl text-purple-200">
             Ask Community
           </span>
-          <video loop muted autoPlay className="h-14 w-14 ml-2 object-cover">
-            <source src="/assets/community.mov" />
-          </video>
+            <video loop muted autoPlay className="h-14 w-14 ml-2 object-cover"
+                   playsInline
+                   controls={false}
+            >
+              <source src="/assets/community.mov"/>
+            </video>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="w-full border border-pink-200 flex flex-col lg:flex-row justify-between items-center p-5 rounded-lg mt-5 lg:mt-0">
+      <div
+          className="w-full border border-pink-200 flex flex-col lg:flex-row justify-between items-center p-5 rounded-lg mt-5 lg:mt-0">
       <span className="text-pink-200 font-normal text-3xl lg:text-2xl">
-        Join the community now <br />
+        Join the community now <br/>
         to stay in touch
       </span>
-      <div className="flex flex-col lg:flex-row items-center p-0 lg:p-5 mt-5 lg:mt-0 w-full lg:w-auto">
-        <SocialButton href={TELEGRAM} icon={<Telegram />} label="Telegram" />
-        <SocialButton
-          href={TWITTER}
-          icon={<Twitter />}
-          label="X.COM"
-          className={"mt-5 lg:mt-0 lg:ml-5"}
-        />
+        <div className="flex flex-col lg:flex-row items-center p-0 lg:p-5 mt-5 lg:mt-0 w-full lg:w-auto">
+          <SocialButton href={TELEGRAM} icon={<Telegram/>} label="Telegram"/>
+          <SocialButton
+              href={TWITTER}
+              icon={<Twitter/>}
+              label="X.COM"
+              className={"mt-5 lg:mt-0 lg:ml-5"}
+          />
+        </div>
       </div>
     </div>
   </section>
