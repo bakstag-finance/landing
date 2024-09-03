@@ -73,7 +73,7 @@
 
 html {
   scroll-behavior: smooth;
-    background: #000000;
+  background: #000000;
 }
 
 .gradient-blur {
@@ -95,11 +95,11 @@ html {
   -webkit-backdrop-filter: blur(0.5px);
   backdrop-filter: blur(0.5px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 1) 12.5%,
-          rgba(0, 0, 0, 1) 25%,
-          rgba(0, 0, 0, 0) 37.5%
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 12.5%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 0) 37.5%
   );
 }
 
@@ -108,25 +108,24 @@ html {
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 12.5%,
-          rgba(0, 0, 0, 1) 25%,
-          rgba(0, 0, 0, 1) 37.5%,
-          rgba(0, 0, 0, 0) 50%
+    to top,
+    rgba(0, 0, 0, 0) 12.5%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 1) 37.5%,
+    rgba(0, 0, 0, 0) 50%
   );
 }
-
 
 .gradient-blur > div:nth-of-type(5) {
   z-index: 3;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 25%,
-          rgba(0, 0, 0, 1) 37.5%,
-          rgba(0, 0, 0, 1) 50%,
-          rgba(0, 0, 0, 0) 62.5%
+    to top,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 1) 37.5%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 62.5%
   );
 }
 
@@ -135,11 +134,11 @@ html {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 37.5%,
-          rgba(0, 0, 0, 1) 50%,
-          rgba(0, 0, 0, 1) 62.5%,
-          rgba(0, 0, 0, 0) 75%
+    to top,
+    rgba(0, 0, 0, 0) 37.5%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 62.5%,
+    rgba(0, 0, 0, 0) 75%
   );
 }
 
@@ -148,11 +147,11 @@ html {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 50%,
-          rgba(0, 0, 0, 1) 62.5%,
-          rgba(0, 0, 0, 1) 75%,
-          rgba(0, 0, 0, 0) 87.5%
+    to top,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 62.5%,
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, 0) 87.5%
   );
 }
 
@@ -161,11 +160,11 @@ html {
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 62.5%,
-          rgba(0, 0, 0, 1) 75%,
-          rgba(0, 0, 0, 1) 87.5%,
-          rgba(0, 0, 0, 0) 100%
+    to top,
+    rgba(0, 0, 0, 0) 62.5%,
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, 1) 87.5%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 
@@ -174,9 +173,47 @@ html {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   mask: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0) 75%,
-          rgba(0, 0, 0, 1) 87.5%,
-          rgba(0, 0, 0, 1) 100%
+    to top,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 1) 87.5%,
+    rgba(0, 0, 0, 1) 100%
   );
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+  opacity: 0;
+}
+
+video::-webkit-media-controls-play-button {
+  display: none;
+}
+
+video::-webkit-media-controls-panel {
+  display: none;
+  opacity: 1;
+}
+video::-webkit-media-controls-play-button {
+  display: none!;
+  appearance: none;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-overlay-play-button {
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls-container {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-appearance: none;
+}
+:host::shadow::-webkit-media-controls-container {
+  display: none;
 }

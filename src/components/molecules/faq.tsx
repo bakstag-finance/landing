@@ -89,41 +89,44 @@ export const FAQSection = () => (
         <div className="flex flex-col justify-start items-start h-full w-full">
           <span className="text-4xl font-light text-purple-200">FAQ</span>
           <span className="mt-5 text-4xl text-white-700 font-medium">
-          Expecting questions,
-          <br/>
-          we answer
-        </span>
+            Expecting questions,
+            <br />
+            we answer
+          </span>
         </div>
         <div className="flex flex-col justify-start items-start h-full w-full mt-5 lg:mt-0">
           <div className="bg-black-700 rounded-xl flex flex-col w-full p-4">
-            <FAQAccordion/>
+            <FAQAccordion />
           </div>
           <div className="mt-2 ml-5 flex flex-row w-full items-center">
-          <span className="font-light text-4xl text-purple-200">
-            Ask Community
-          </span>
-            <video loop muted autoPlay className="h-14 w-14 ml-2 object-cover"
-                   playsInline
-                   controls={false}
+            <span className="font-light text-4xl text-purple-200">
+              Ask Community
+            </span>
+            <video
+              loop
+              muted
+              autoPlay
+              className="h-14 w-14 ml-2 object-cover"
+              playsInline
+              controls={false}
             >
-              <source src="/assets/community.mov"/>
+              <source src="/assets/community.mov" />
             </video>
           </div>
         </div>
       </div>
-      <div
-          className="w-full border border-pink-200 flex flex-col lg:flex-row justify-between items-center p-5 rounded-lg mt-5 lg:mt-0">
-      <span className="text-pink-200 font-normal text-3xl lg:text-2xl">
-        Join the community now <br/>
-        to stay in touch
-      </span>
+      <div className="w-full border border-pink-200 flex flex-col lg:flex-row justify-between items-center p-5 rounded-lg mt-5 lg:mt-0">
+        <span className="text-pink-200 font-normal text-3xl lg:text-2xl">
+          Join the community now <br />
+          to stay in touch
+        </span>
         <div className="flex flex-col lg:flex-row items-center p-0 lg:p-5 mt-5 lg:mt-0 w-full lg:w-auto">
-          <SocialButton href={TELEGRAM} icon={<Telegram/>} label="Telegram"/>
+          <SocialButton href={TELEGRAM} icon={<Telegram />} label="Telegram" />
           <SocialButton
-              href={TWITTER}
-              icon={<Twitter/>}
-              label="X.COM"
-              className={"mt-5 lg:mt-0 lg:ml-5"}
+            href={TWITTER}
+            icon={<Twitter />}
+            label="X.COM"
+            className={"mt-5 lg:mt-0 lg:ml-5"}
           />
         </div>
       </div>
