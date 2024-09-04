@@ -39,7 +39,6 @@ pink sheet trading is done directly between two parties, without the supervision
   },
 ];
 
-
 const FAQAccordion = () => (
   <Accordion type="single" collapsible>
     {faqItems.map((item) => (
@@ -97,14 +96,14 @@ export const FAQSection = () => (
           <div className="mt-2 ml-5 flex flex-row w-full items-center">
             <Link href={TELEGRAM} target={"_blank"}>
               <span className="font-light text-4xl text-purple-200">
-              Ask Community
-            </span>
+                Ask Community
+              </span>
             </Link>
             <video
-                loop
-                muted
-                autoPlay
-                className="h-14 w-14 ml-2 object-cover"
+              loop
+              muted
+              autoPlay
+              className="h-14 w-14 ml-2 object-cover"
               playsInline
               controls={false}
             >

@@ -33,21 +33,21 @@ export const AboutSection = () => (
       </div>
 
       <div className="w-full flex flex-row justify-end h-full items-center mt-20 lg:mt-0">
-        <div className="w-full flex flex-row justify-end mt-0 lg:mt-5">
+        <div className="w-full max-w-[400px] flex flex-row justify-end items-center mt-0 lg:mt-5 relative">
           <ChatBubbleBg />
           <div
             className={
-              "absolute z-6 w-full max-w-[400px] py-10 lg:py-5 pl-7 lg:p-4 text-center"
+              "absolute z-6 w-full h-full flex items-center justify-center lg:py-5 lg:p-4 text-center"
             }
           >
             <span
               className={
-                "text-green-300 text-xl lg:text-2xl font-medium w-full"
+                "text-green-300 text-xl lg:text-2xl font-medium w-full h-full py-10 lg:py-0"
               }
             >
               We believe in onchain public markets with trustless relations
-              between buyers and sellers, eliminating the need for a third-
-              party intermediary.
+              between buyers and sellers, eliminating the need for a third-party
+              intermediary.
             </span>
           </div>
         </div>
