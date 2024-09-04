@@ -83,6 +83,12 @@ html {
   height: 30%;
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .gradient-blur {
+    height: 15%;
+  }
+}
 .gradient-blur > div,
 .gradient-blur::before,
 .gradient-blur::after {
