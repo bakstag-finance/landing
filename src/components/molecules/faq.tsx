@@ -24,26 +24,22 @@ const faqItems = [
   {
     value: "item-2",
     question: "What is Omnichain?",
-    answer: `Bakstag is a permissionless omnichain interoperability
-    over-the-counter protocol. Which allows Seamless
-    peer-to-peer transactions thought any network.`,
+    answer: `Omnichain is an application designed to operate across isolated chains, allowing them to communicate with each other`,
   },
   {
     value: "item-3",
     question: "What is OTC Protocol?",
-    answer: `Bakstag is a permissionless omnichain interoperability
-    over-the-counter protocol. It enables Seamless
-    peer-to-peer transactions without intermediaries.`,
+    answer: `Over-the-counter (OTC) or off-exchange trading or
+pink sheet trading is done directly between two parties, without the supervision of an exchange`,
   },
   {
     value: "item-4",
     question: "What's the commission fee?",
-    answer: `Bakstag is a permissionless omnichain interoperability
-    protocol. It operates without slippage, bridging, or LP limits.`,
+    answer: `The fee is only paid by the advertiser, namely 1% of each sale of their token to be received.`,
   },
 ];
 
-// Компонент для отображения FAQ
+
 const FAQAccordion = () => (
   <Accordion type="single" collapsible>
     {faqItems.map((item) => (
@@ -99,14 +95,16 @@ export const FAQSection = () => (
             <FAQAccordion />
           </div>
           <div className="mt-2 ml-5 flex flex-row w-full items-center">
-            <span className="font-light text-4xl text-purple-200">
+            <Link href={TELEGRAM} target={"_blank"}>
+              <span className="font-light text-4xl text-purple-200">
               Ask Community
             </span>
+            </Link>
             <video
-              loop
-              muted
-              autoPlay
-              className="h-14 w-14 ml-2 object-cover"
+                loop
+                muted
+                autoPlay
+                className="h-14 w-14 ml-2 object-cover"
               playsInline
               controls={false}
             >
