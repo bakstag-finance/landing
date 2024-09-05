@@ -21,17 +21,17 @@ export const MainSection = () => {
             autoPlay
             playsInline
             controls={false}
-            className="h-screen w-full object-contain z-1 transition-all transform scale-150 lg:scale-125"
+            className="h-screen w-full object-contain z-1 transition-all transform -translate-y-[50px] lg:translate-y-0 scale-150 lg:scale-125"
             src="/assets/bg.mp4"
           />
         </div>
-        <div className="absolute inset-0 flex justify-center items-center flex-col z-6 px-5 lg:px-0 -mt-20 lg:mt-0">
+        <div className="absolute inset-0 flex justify-center items-center flex-col z-6 px-5 lg:px-0 -mt-44 lg:mt-0">
           <h1 className="font-bold text-4xl lg:text-6xl text-center text-white-700">
             Omnichain <br className={"lg:hidden"} />
             OTC Market
           </h1>
 
-          <div className="mt-5 lg:mt-10 w-full max-w-lg lg:max-w-3xl p-4 lg:py-8 lg:px-5 text-center flex flex-col justify-center items-center border border-gray-700 rounded-3xl bg-black bg-opacity-80">
+          <div className="mt-5 lg:mt-10 w-full max-w-lg lg:max-w-3xl p-4 py-6 lg:py-8 lg:px-5 text-center flex flex-col justify-center items-center border border-gray-700 rounded-3xl bg-black bg-opacity-80">
             <span className="text-gray-400 text-xl lg:text-2xl w-full">
               Seamless <span className="text-white-700">peer-to-peer</span>{" "}
               transactions through any network. <br />
