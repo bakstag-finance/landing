@@ -18,7 +18,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className="z-[9999] fixed w-5 h-5 bg-black border-2 border-black rounded-full pointer-events-none"
+      className="hidden md:block z-[9999] fixed w-5 h-5 bg-black border-2 border-black rounded-full pointer-events-none"
       style={{
         top: `${position.y - 5}px`,
         left: `${position.x - 5}px`,
