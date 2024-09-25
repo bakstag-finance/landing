@@ -42,7 +42,7 @@ export const AboutSection = () => (
           >
             <span
               className={
-                "text-green-300 text-xl lg:text-2xl font-medium w-full h-full py-10 lg:py-0"
+                "text-green-300 text-lg lg:text-2xl font-medium w-full h-full py-8 px-1 lg:px-0 lg:py-0"
               }
             >
               We believe in onchain public markets with trustless relations
