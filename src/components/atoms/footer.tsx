@@ -14,7 +14,7 @@ export const Footer = () => (
       <div className={"flex flex-col"}>
         <span className={"text-white-700 text-4xl lg:text-2xl"}>Bakstag</span>
         <a
-          className="text-2xl lg:text-xl text-gray-600 mt-5 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+          className="text-2xl lg:text-xl text-gray-600 mt-5 group transition-all duration-300 ease-in-out hover:text-white-700"
           href={MVP}
           target={"_blank"}
         >
@@ -29,7 +29,7 @@ export const Footer = () => (
             Community
           </span>
           <a
-            className="text-2xl lg:text-xl text-gray-600 mt-5 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+            className="text-2xl lg:text-xl text-gray-600 mt-5 group transition-all duration-300 ease-in-out hover:text-white-700"
             href={TELEGRAM}
             target={"_blank"}
           >
@@ -38,7 +38,7 @@ export const Footer = () => (
             </span>
           </a>
           <a
-            className="text-2xl lg:text-xl text-gray-600 mt-3 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+            className="text-2xl lg:text-xl text-gray-600 mt-3 group transition-all duration-300 ease-in-out hover:text-white-700"
             href={TWITTER}
             target={"_blank"}
           >
@@ -52,7 +52,7 @@ export const Footer = () => (
             About
           </span>
           <a
-            className="text-2xl lg:text-xl text-gray-600 mt-5 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+            className="text-2xl lg:text-xl text-gray-600 mt-5 group transition-all duration-300 ease-in-out hover:text-white-700"
             href={MVP}
             target={"_blank"}
           >
@@ -61,7 +61,7 @@ export const Footer = () => (
             </span>
           </a>
           <a
-            className="text-2xl lg:text-xl text-gray-600 mt-3 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+            className="text-2xl lg:text-xl text-gray-600 mt-3 group transition-all duration-300 ease-in-out hover:text-white-700"
             href={DOCS}
             target={"_blank"}
           >
@@ -70,7 +70,7 @@ export const Footer = () => (
             </span>
           </a>
           <a
-            className="text-2xl lg:text-xl text-gray-600 mt-3 cursor-pointer group transition-all duration-300 ease-in-out hover:text-white-700"
+            className="text-2xl lg:text-xl text-gray-600 mt-3 group transition-all duration-300 ease-in-out hover:text-white-700"
             href={GITHUB}
             target={"_blank"}
           >

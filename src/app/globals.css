@@ -64,16 +64,31 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border cursor-none;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground cursor-none;
   }
+}
+html,
+body,
+a,
+button,
+div,
+input,
+span,
+svg,
+div[role="combobox"] {
+  cursor: none;
+}
+*:where(.cursor-none) {
+  cursor: none !important;
 }
 
 html {
   scroll-behavior: smooth;
   background: #000000;
+  cursor: none;
 }
 
 .gradient-blur {

@@ -37,7 +37,7 @@ export const TrustSection = () => (
               </span>
             </div>
             <a
-              className="text-purple-100 text-opacity-50 underline cursor-pointer hover:text-white-700 transition-all duration-350 ease-in-out mt-16"
+              className="text-purple-100 text-opacity-50 underline hover:text-white-700 transition-all duration-350 ease-in-out mt-16"
               href={DOCS}
               target="_blank"
             >
@@ -69,7 +69,7 @@ export const TrustSection = () => (
               </span>
             </div>
             <a
-              className="text-purple-100 text-opacity-50 underline cursor-pointer hover:text-white-700 transition-all duration-350 ease-in-out mt-16"
+              className="text-purple-100 text-opacity-50 underline hover:text-white-700 transition-all duration-350 ease-in-out mt-16"
               href={GITHUB}
               target="_blank"
             >
@@ -101,7 +101,7 @@ export const TrustSection = () => (
               </span>
             </div>
             <a
-              className="text-purple-100 text-opacity-50 underline cursor-pointer hover:text-white-700 transition-all duration-350 ease-in-out mt-16"
+              className="text-purple-100 text-opacity-50 underline hover:text-white-700 transition-all duration-350 ease-in-out mt-16"
               href={MVP}
               target="_blank"
             >

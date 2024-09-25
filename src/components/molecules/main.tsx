@@ -44,10 +44,11 @@ export const MainSection = () => {
 
             <div className="mt-5 text-white flex flex-col lg:flex-row items-center justify-center w-full lg:w-[70%] px-10">
               <Select value={"eth-base"} disabled>
-                <SelectTrigger className="text-white-700 text-xl disabled:cursor-default disabled:opacity-100">
+                <SelectTrigger className="text-white-700 text-xl disabled:cursor-default disabled:opacity-100 cursor-none">
                   <SelectValue
                     placeholder="Select Network"
                     defaultValue="eth-base"
+                    className={"cursor-none"}
                   />
                 </SelectTrigger>
                 <SelectContent>
