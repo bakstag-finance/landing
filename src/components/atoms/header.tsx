@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import clsx from "clsx";
 import { MVP } from "@/lib/links";
 import Link from "next/link";
+import { Squircle } from "@squircle-js/react";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -66,13 +67,14 @@ export const Header = () => {
             FAQ
           </span>
         </a>
-        <Link href={MVP} target={"_blank"}>
-          <Button className="rounded-xl mt-20 text-3xl p-12 font-light cursor-none !important">
-            {" "}
-            {/* Добавлено !important */}
-            Exchange
-          </Button>
-        </Link>
+        <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+          <Link href={MVP} target={"_blank"}>
+            <Button className="rounded-xl mt-20 text-3xl p-12 font-light cursor-none !important">
+              {" "}
+              Exchange
+            </Button>
+          </Link>
+        </Squircle>
       </div>
 
       <nav className="sticky top-0 w-full h-20 flex justify-center items-center z-50">
@@ -123,11 +125,13 @@ export const Header = () => {
                   FAQ
                 </span>
               </a>
-              <Link href={MVP} target={"_blank"}>
-                <Button className="rounded-xl ml-2 cursor-none !important">
-                  Exchange
-                </Button>{" "}
-              </Link>
+              <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+                <Link href={MVP} target={"_blank"}>
+                  <Button className="rounded-xl ml-2 cursor-none !important">
+                    Exchange
+                  </Button>{" "}
+                </Link>
+              </Squircle>
             </div>
           </div>
           <div className="flex lg:hidden flex-row justify-between z-10 w-full px-10 xl:px-0">
@@ -141,20 +145,19 @@ export const Header = () => {
                 className="rounded-full"
               />
               <span className="text-white-700 ml-3 cursor-none">Bakstag</span>{" "}
-              {/* Добавлено cursor-none */}
             </div>
             <div className="flex items-center">
               <Menu
                 className="stroke-gray-700 cursor-none"
                 onClick={handleChange}
               />{" "}
-              {/* Добавлено cursor-none */}
-              <Link href={MVP} target={"_blank"}>
-                <Button className="rounded-xl ml-5 cursor-none !important">
-                  Exchange
-                </Button>{" "}
-                {/* Добавлено !important */}
-              </Link>
+              <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+                <Link href={MVP} target={"_blank"}>
+                  <Button className="rounded-xl ml-5 cursor-none !important">
+                    Exchange
+                  </Button>{" "}
+                </Link>
+              </Squircle>
             </div>
           </div>
         </div>

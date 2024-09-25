@@ -1,7 +1,4 @@
 import { DOCS, GITHUB, MVP } from "@/lib/links";
-import planetVideo from "@/assets/planet.mp4";
-import chipVideo from "@/assets/chip.mov";
-import keyVideo from "@/assets/key.mov";
 
 export const TrustSection = () => (
   <section

@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Telegram } from "@/components/atoms/telegram";
 import { Twitter } from "@/components/atoms/twitter";
 import { cn } from "@/lib/utils";
-import communityVideo from "@/assets/community.mov";
+import { Squircle } from "@squircle-js/react";
 
 const faqItems = [
   {
@@ -62,17 +62,19 @@ interface SocialButtonProps {
   className?: string;
 }
 const SocialButton = ({ href, icon, label, className }: SocialButtonProps) => (
-  <Link href={href} target="_blank" className="w-full">
-    <Button
-      className={cn(
-        "w-full lg:w-auto rounded-xl bg-pink-100 bg-opacity-20 hover:bg-pink-100/50 px-10 p-6",
-        className,
-      )}
-    >
-      {icon}
-      <span className="ml-2 text-2xl text-pink-200 font-normal">{label}</span>
-    </Button>
-  </Link>
+  <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+    <Link href={href} target="_blank" className="w-full">
+      <Button
+        className={cn(
+          "w-full lg:w-auto rounded-xl bg-pink-100 bg-opacity-20 hover:bg-pink-100/50 px-10 p-6",
+          className,
+        )}
+      >
+        {icon}
+        <span className="ml-2 text-2xl text-pink-200 font-normal">{label}</span>
+      </Button>
+    </Link>
+  </Squircle>
 );
 
 export const FAQSection = () => (
@@ -113,21 +115,27 @@ export const FAQSection = () => (
           </div>
         </div>
       </div>
-      <div className="w-full border border-pink-200 flex flex-col lg:flex-row justify-between items-center p-5 rounded-lg mt-5 lg:mt-0">
-        <span className="text-pink-200 font-normal text-3xl lg:text-2xl">
-          Join the community now <br />
-          to stay in touch
-        </span>
-        <div className="flex flex-col lg:flex-row items-center p-0 lg:p-5 mt-5 lg:mt-0 w-full lg:w-auto">
-          <SocialButton href={TELEGRAM} icon={<Telegram />} label="Telegram" />
-          <SocialButton
-            href={TWITTER}
-            icon={<Twitter />}
-            label="X.COM"
-            className={"mt-5 lg:mt-0 lg:ml-5"}
-          />
+      <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+        <div className="w-full border border-pink-200 flex flex-col lg:flex-row justify-between items-center p-5 rounded-lg mt-5 lg:mt-0">
+          <span className="text-pink-200 font-normal text-3xl lg:text-2xl">
+            Join the community now <br />
+            to stay in touch
+          </span>
+          <div className="flex flex-col lg:flex-row items-center p-0 lg:p-5 mt-5 lg:mt-0 w-full lg:w-auto">
+            <SocialButton
+              href={TELEGRAM}
+              icon={<Telegram />}
+              label="Telegram"
+            />
+            <SocialButton
+              href={TWITTER}
+              icon={<Twitter />}
+              label="X.COM"
+              className={"mt-5 lg:mt-0 lg:ml-5"}
+            />
+          </div>
         </div>
-      </div>
+      </Squircle>
     </div>
   </section>
 );

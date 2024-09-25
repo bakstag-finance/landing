@@ -9,6 +9,7 @@ import { ArrowLeftRight } from "lucide-react";
 import Link from "next/link";
 import { MVP } from "@/lib/links";
 import { Button } from "@/components/ui/button";
+import { Squircle } from "@squircle-js/react";
 
 export const MainSection = () => {
   return (
@@ -44,13 +45,15 @@ export const MainSection = () => {
 
             <div className="mt-5 text-white flex flex-col lg:flex-row items-center justify-center w-full lg:w-[70%] px-10">
               <Select value={"eth-base"} disabled>
-                <SelectTrigger className="text-white-700 text-xl disabled:cursor-default disabled:opacity-100 cursor-none">
-                  <SelectValue
-                    placeholder="Select Network"
-                    defaultValue="eth-base"
-                    className={"cursor-none"}
-                  />
-                </SelectTrigger>
+                <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+                  <SelectTrigger className="text-white-700 text-xl disabled:cursor-default disabled:opacity-100 cursor-none">
+                    <SelectValue
+                      placeholder="Select Network"
+                      defaultValue="eth-base"
+                      className={"cursor-none"}
+                    />
+                  </SelectTrigger>
+                </Squircle>
                 <SelectContent>
                   <SelectContent>
                     <SelectItem value="eth-base">
@@ -103,12 +106,14 @@ export const MainSection = () => {
               </Select>
               <ArrowLeftRight className="stroke-white-700 mx-5 lg:mx-3 my-3 lg:my-0 size-5 lg:size-6 stroke-[0.75]" />
               <Select value={"sol-sol"} disabled>
-                <SelectTrigger className="text-white-700 text-xl disabled:opacity-100 disabled:cursor-default">
-                  <SelectValue
-                    placeholder="Select Network"
-                    defaultValue="sol-sol"
-                  />
-                </SelectTrigger>
+                <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+                  <SelectTrigger className="text-white-700 text-xl disabled:opacity-100 disabled:cursor-default">
+                    <SelectValue
+                      placeholder="Select Network"
+                      defaultValue="sol-sol"
+                    />
+                  </SelectTrigger>
+                </Squircle>
                 <SelectContent>
                   <SelectContent>
                     <SelectItem value="eth-base">
@@ -162,14 +167,16 @@ export const MainSection = () => {
             </div>
           </div>
 
-          <Link href={MVP} target="_blank">
-            <Button
-              className="rounded-2xl mt-5 lg:mt-10 w-72 p-7 lg:w-80 lg:p-7"
-              variant="default"
-            >
-              <span className="text-2xl lg:text-xl font-light">Exchange</span>
-            </Button>
-          </Link>
+          <Squircle asChild cornerRadius={12} cornerSmoothing={1}>
+            <Link href={MVP} target="_blank">
+              <Button
+                className="rounded-2xl mt-5 lg:mt-10 w-72 p-7 lg:w-80 lg:p-7"
+                variant="default"
+              >
+                <span className="text-2xl lg:text-xl font-light">Exchange</span>
+              </Button>
+            </Link>
+          </Squircle>
         </div>
       </section>
     </>
