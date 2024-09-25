@@ -22,7 +22,7 @@ export const MainSection = () => {
             playsInline
             controls={false}
             className="h-screen w-full object-contain z-1 transition-all transform -translate-y-[50px] lg:translate-y-0 scale-150 lg:scale-125"
-            src="/assets/bg.mp4"
+            src="/video/bg.webm"
           />
         </div>
         <div className="absolute inset-0 flex justify-center items-center flex-col z-6 px-5 lg:px-0 -mt-44 lg:mt-0">

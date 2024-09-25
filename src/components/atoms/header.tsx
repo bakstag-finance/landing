@@ -29,7 +29,6 @@ export const Header = () => {
             className="stroke-white-700 size-10 cursor-none"
             onClick={handleChange}
           />{" "}
-          {/* Добавлено cursor-none */}
         </div>
         <a
           className="mt-20 text-3xl text-gray-700 mx-2 cursor-none group transition-all duration-300 ease-in-out hover:text-white" // Добавлено cursor-none
@@ -79,20 +78,17 @@ export const Header = () => {
       <nav className="sticky top-0 w-full h-20 flex justify-center items-center z-50">
         <div className="w-full flex justify-center items-center max-w-[1200px] cursor-none">
           {" "}
-          {/* Добавлено cursor-none */}
           <div className="hidden lg:flex w-full h-full justify-between items-center relative z-10">
             <div className="flex items-center cursor-none">
               {" "}
-              {/* Добавлено cursor-none */}
               <Image
-                src="/assets/logo.svg"
+                src="/logo.svg"
                 width={30}
                 height={30}
                 alt="logo image"
                 className="rounded-full"
               />
               <span className="text-white-700 ml-3 cursor-none">Bakstag</span>{" "}
-              {/* Добавлено cursor-none */}
             </div>
             <div className="flex items-center">
               <a
@@ -131,16 +127,14 @@ export const Header = () => {
                 <Button className="rounded-xl ml-2 cursor-none !important">
                   Exchange
                 </Button>{" "}
-                {/* Добавлено !important */}
               </Link>
             </div>
           </div>
           <div className="flex lg:hidden flex-row justify-between z-10 w-full px-10 xl:px-0">
             <div className="flex items-center cursor-none">
               {" "}
-              {/* Добавлено cursor-none */}
               <Image
-                src="/assets/logo.svg"
+                src={"/logo.svg"}
                 width={30}
                 height={30}
                 alt="logo image"

@@ -1,4 +1,7 @@
 import { DOCS, GITHUB, MVP } from "@/lib/links";
+import planetVideo from "@/assets/planet.mp4";
+import chipVideo from "@/assets/chip.mov";
+import keyVideo from "@/assets/key.mov";
 
 export const TrustSection = () => (
   <section
@@ -23,7 +26,7 @@ export const TrustSection = () => (
               playsInline
               controls={false}
             >
-              <source src="/assets/planet.mp4" />
+              <source src="/video/planet.webm" />
             </video>
           </div>
           <div className="flex flex-col justify-between h-full mt-4">
@@ -55,7 +58,7 @@ export const TrustSection = () => (
               playsInline
               controls={false}
             >
-              <source src="/assets/chip.mov" />
+              <source src="/video/chip.webm" />
             </video>
           </div>
           <div className="flex flex-col justify-between h-full mt-4">
@@ -87,7 +90,7 @@ export const TrustSection = () => (
               playsInline
               controls={false}
             >
-              <source src="/assets/key.mov" />
+              <source src="/video/key.webm" />
             </video>
           </div>
           <div className="flex flex-col justify-between h-full mt-4">

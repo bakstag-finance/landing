@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Telegram } from "@/components/atoms/telegram";
 import { Twitter } from "@/components/atoms/twitter";
 import { cn } from "@/lib/utils";
+import communityVideo from "@/assets/community.mov";
 
 const faqItems = [
   {
@@ -107,7 +108,7 @@ export const FAQSection = () => (
               playsInline
               controls={false}
             >
-              <source src="/assets/community.mov" />
+              <source src="/video/community.webm" />
             </video>
           </div>
         </div>
